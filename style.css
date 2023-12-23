@@ -1,0 +1,1348 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Inter', sans-serif;
+     font-family: 'Roboto', sans-serif;
+}
+
+.desktop-with {
+     width: 1200px;
+     margin: 0 auto;
+}
+
+.plex {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+/* ---------- stard .nav-1 ---------- */
+.naver-1 {
+     background-color: #F2F1F1;
+}
+
+.nav-1 {
+     height: 4.5em;
+}
+
+.logo {
+     width: 2.9em;
+     height: 2.9em;
+     border-radius: 50%;
+     overflow: hidden;
+}
+
+.logo img {
+     width: 3em;
+     height: 3em;
+}
+
+.search {
+     width: 20em;
+     height: 2.5em;
+     padding: 0 0.7em;
+     /* background-color: #fff; */
+     border-radius: 9em;
+     align-items: center;
+     font-family: 'Inter', sans-serif;
+}
+
+
+.fa-magnifying-glass {
+     font-size: 1em;
+     color: #555;
+     margin-right: 0.3em;
+}
+
+.search input{
+     width: 20em;
+     height: 2.9em;
+     padding: 0.3em 0.8em;
+     /* background-color: none; */
+     border: none;
+     outline: none;
+}
+
+.profile {
+     width: 5em;
+}
+
+.fa-user {
+     font-size: 1.5em;
+     color: #000;
+     margin-right: 0.8em;
+     margin-left: 5em;
+}
+
+.fa-heart {
+     font-size: 1.5em;
+     color: #000;
+}
+
+/* ---------- End .nav-1 ---------- */
+
+/* ---------- stard .menu ---------- */
+
+.menu {
+     background-color: #777;
+     position:static; 
+     top: 1px;
+}
+
+.nav-2 {
+     height: 4em;
+}
+.aitem{
+     width: 22em;
+     margin-top: 0.5em;
+     /* height:em; */
+     /* background-color: #4DD4B4; */
+}
+
+.aitem ul li {
+     margin: 0.5em;
+     display: inline-block;
+     list-style: none;
+     position: relative;
+     font-family: 'Inter', sans-serif;
+}
+
+.aitem ul li a {
+     font-family: 'Inter', sans-serif;
+     font-size: 1.2em;
+     font-weight: 500;
+     text-decoration: none;
+     color: #fff;
+}
+.aitem ul li:nth-child(2){
+     /* height: 1em; */
+     padding-bottom: 1em;
+}
+
+.aitem ul li a:hover {
+     color: #d9d9d9;
+     /* color: #000; */
+}
+
+.aitem ul li ul {
+     width: 36.9em;
+     height: 4.5em;
+     padding: 1em;
+     display: none;
+     position: absolute;
+     font-family: 'Inter', sans-serif;
+     top: 2em;
+     left: -5em;
+     border-radius: 0 0 0.8em 0.8em;
+     background-color: #777;
+     backdrop-filter: blur(20px);
+     transition: 5s ease-out;
+}
+
+.aitem ul li:hover ul {
+     display: block;
+}
+
+.aitem ul li:hover>ul li a:hover {
+     color: #d9d9d9;
+     padding-bottom: 0.3em;
+     border-bottom: 2px solid #fff;
+}
+
+.fa-phone {
+     margin-right: 0.8em;
+     font-size: 1.2em;
+     color: #fff;
+     /* transition: 0.3s ease-in-out; */
+}
+
+/* .fa-phone:hover {
+     transform: scale(1.1);
+} */
+
+.fa-cart-shopping {
+     margin-right: 0.8em;
+     font-size: 1.5em;
+     color: #fff;
+     /* transition: 0.3s ease-in-out; */
+}
+
+/* .fa-cart-shopping:hover {
+     transform: scale(1.2);
+} */
+
+/* ---------- End .menu ---------- */
+
+
+/* ---------- stard .cover-photp ---------- */
+
+.cover-photp {
+     width: 100%;
+     height: 30em;
+     background-image: url(image/cover-2.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+
+}
+
+
+/* ---------- end .cover-photp ---------- */
+
+
+/* ---------- stard .ceteragory-head ---------- */
+
+.by-cata-top {
+     margin: 3em 0 2em;
+}
+
+.fa-bookmark {
+     margin-right: 0.5em;
+     font-size: 1.2em;
+     color: #feca36;
+}
+
+.ceta-h-left img {
+     width: 1.5em;
+     height: 1.5em;
+     margin-right: 0.9em;
+}
+
+.name {
+     font-family: 'Inter', sans-serif;
+     font-size: 1.5em;
+
+}
+
+.dami {
+     width: 35em;
+     height: 0.2em;
+     margin-right: 15em;
+     background-color: #000;
+}
+
+.view {
+     font-size: 1.3em;
+     font-weight: 400;
+}
+
+.view a {
+     color: #050a30;
+     text-decoration: none;
+}
+
+.view a:hover {
+     color: #000;
+}
+
+/* ---------- end .ceteragory-head ---------- */
+/* ---------- stard .shop-cata ---------- */
+.shop-cata {
+     margin: 4.5em 0;
+}
+
+.by-cata {
+     position: relative;
+     overflow: hidden;
+}
+
+
+.by-cata:hover .left {
+     display: block;
+}
+
+.by-cata:hover .right {
+     display: block;
+}
+
+.catagory {
+     width: 17em;
+     height: 13em;
+     margin-right: 2em;
+     margin-bottom: 3em;
+     padding: 1em;
+     background-color: #e9e9e9;
+     border-radius: 0.9em;
+}
+
+.catagory:hover .cata-photo img {
+     transform: scale(1.02);
+}
+
+.catagory:hover .fa-arrow-right {
+     transform: scaleX(1.3);
+     color: #000;
+}
+
+.cata-photo {
+     width: 15em;
+     height: 9em;
+     margin-bottom: 0.9em;
+     border-radius: 15px;
+     overflow: hidden;
+}
+
+.cata-photo img {
+     width: 16em;
+     height: 10em;
+     transition: 0.2s ease-in-out;
+}
+
+.coffee {
+     margin-bottom: 0.5em;
+     text-align: center;
+     font-size: 1em;
+     align-items: center;
+}
+
+.coffee a {
+     font-family: 'Inter', sans-serif;
+     font-size: 1.3em;
+     text-decoration: none;
+     color: #000;
+}
+
+.fa-arrow-right {
+     font-size: 0.8em;
+     color: #555;
+}
+
+.left {
+     width: 2.5em;
+     height: 2.5em;
+     display: none;
+     backdrop-filter: blur(50px);
+     border-radius: 50%;
+     top: 5em;
+     left: -0;
+     position: absolute;
+
+}
+.left a{
+     color: #000;
+}
+.arorow-left {
+     margin: 0.8em;
+}
+
+.right {
+     width: 2.5em;
+     height: 2.5em;
+     display: none;
+     backdrop-filter: blur(50px);
+     border-radius: 50%;
+     top: 5em;
+     right: 1em;
+     position: absolute;
+
+}
+.right a{
+     color: #000;
+}
+.arorow-right {
+     margin: 1em 1.2em;
+}
+
+/* ---------- end .shop-cata ---------- */
+
+/* ---------- stard .off ---------- */
+
+
+.off-top {
+     width: 100%;
+     height: 35em;
+     margin: 2em 0;
+     background-image: url(image/offer.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+.bagroubd {
+     width: 100%;
+     height: 10em;
+     margin: 14em 0 0;
+     background-color: #feca36;
+     position: relative;
+}
+.descount{
+     position: absolute;
+     z-index: 99;
+     left: 4em;
+     transform: translateY(4%);
+}
+
+.products-card {
+     width: 23.5em;
+     /* height: 26em; */
+     border-radius: 0.5em;
+     background: #f7f8ff;
+     position: relative;
+}
+
+.products-card:hover .cat-card {
+     display: block;
+}
+
+
+.nescafe-top {
+     margin-bottom: 1em;
+     padding: 1em 1.5em 0 0;
+     display: flex;
+     justify-content: space-between;
+}
+
+.save {
+     width: 8em;
+     height: 2.5em;
+     margin: 1.5em 0;
+     background-color: #000;
+     border-radius: 0 0.8em 0.8em 0;
+}
+
+.save20 {
+     margin: 0.6em 1em;
+     color: #fff;
+     font-size: 1em;
+     font-weight: 900;
+}
+
+.products-ph {
+     width: 15em;
+     height: 14em;
+}
+
+.products-ph img {
+     width: 12em;
+     height: 14em;
+}
+
+.nescafe-headline {
+     width: 21em;
+     /* height: 9em; */
+     margin: 0 1.9em 1em;
+     padding: 0.8em 0.8em;
+}
+
+.classic {
+     margin-bottom: 0.3em;
+     font-size: 2em;
+}
+
+.shot-des {
+     margin-bottom: 0.6em;
+     font-family: 'Roboto', sans-serif;
+     font-size: 0.9em;
+
+}
+
+.taka {
+     width: 6em;
+     height: 1.8em;
+     margin-bottom: 0.9em;
+     background-color: #e9e6e6;
+     border-radius: 0.9em;
+     font-family: 'Roboto', sans-serif;
+
+}
+.reciews-nimber{
+     width: 15em;
+}
+
+.fa-bangladeshi-taka-sign {
+     margin: 0.4em 0.6em;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+     color: #FFD700;
+}
+
+.cat-card {
+     width: 4em;
+     height: 12em;
+     padding: 1em;
+     display: none;
+     background-color: #e2e2e2;
+     border-radius: 0.9em 0 0 0.9em;
+     position: absolute;
+     top: 1em;
+     right: 0em;
+     transition: 0.3s ease-in;
+
+}
+
+
+
+.quick {
+     width: 2.8em;
+     height: 2.8em;
+     margin-bottom: 0.9em;
+     background-color: #fff;
+     border-radius: 50%;
+     transition: 0.3s ease-in-out;
+}
+
+.quick:hover {
+     transform: scale(1.1);
+}
+
+.save-cad {
+     margin: 0.6em 0.4em;
+     font-size: 1.4em;
+     color: #000;
+}
+
+.save-eye {
+     margin: 0.5em 0.4em;
+     font-size: 1.4em;
+     color: #000;
+}
+
+.save-love {
+     margin: 0.5em 0.5em;
+     font-size: 1.4em;
+     color: #000;
+}
+
+.discount-card{
+     position: relative;
+}
+
+.discount-card:hover .save-left{
+     display: block;
+}
+.discount-card:hover .save-right{
+     display: block;
+}
+
+.save-left {
+     top: 15em;
+     left: -0.1em;
+     position: absolute;
+     display: none;
+     z-index: 9999999999;
+}
+.save-left a{
+     font-size: 2em;
+     color: #000;
+}
+
+
+
+.save-right {
+     top: 15em;
+     right: -0.1em;
+     position: absolute;
+     display: none;
+     z-index: 9999999999;
+
+}
+.save-right a{
+     font-size: 2em;
+     color: #000;
+}
+
+
+
+/* ---------- end .off ---------- */
+
+
+/* ---------- stard .popular ---------- */
+.popular {
+     background-color: #f2f2f2;
+     margin-top: 14em;
+     padding-top: 1.5em;
+}
+
+.poputar-left {
+     width: 35em;
+     margin: 1em 0 4em;
+     overflow: hidden;
+     background-color: #fff;
+     border-radius: 1em;
+}
+
+.the-m-bod {
+     padding: 1em 1.5em 0;
+}
+
+.the-month-left {
+     width: 13em;
+}
+
+.top-month {
+     width: 9.9em;
+     margin: 1em 0;
+
+}
+
+.fa-crown {
+     width: 1.9em;
+     height: 1.9em;
+     margin-top: 0.9em;
+     color: #FFD700;
+}
+
+.cerealac {
+     margin-bottom: 1.5em;
+}
+
+.cerealac a {
+     font-size: 1.5em;
+     text-decoration: none;
+     color: #000;
+
+}
+
+.cerealac a:hover {
+     color: #FFD700;
+}
+
+.kg-left {
+     width: 5.9em;
+     height: 2em;
+     padding: 0 1.2em;
+     background-color: #d9d9d9;
+     border-radius: 1em;
+
+}
+
+.kg-reight {
+     width: 5.5em;
+     height: 2em;
+     padding: 0.9em;
+     background-color: #d9d9d9;
+     border-radius: 1em;
+}
+
+.kg-reight img {
+     width: 1em;
+     height: 1em;
+}
+
+.the-month-right img {
+     width: 13em;
+     height: 15em;
+     margin-top: 2em;
+}
+
+.plas {
+     width: 14em;
+}
+
+.add {
+     width: 8em;
+     height: 3em;
+     margin-right: 1em;
+     background-color: #050a30;
+     border-radius: 0 1em;
+}
+
+.add a {
+     text-decoration: none;
+}
+
+.fa-plus {
+     margin: 0.3em 0;
+     color: #fff;
+     font-size: 1.9em;
+     display: block;
+     text-align: center;
+     /* align-items: center; */
+}
+
+.add:hover .fa-plus {
+     color: #FFff00;
+}
+
+.stear {
+     width: 4.5em;
+     height: 2em;
+     padding: 0 1em;
+     background-color: #d9d9d9;
+     border-radius: 1em;
+}
+
+/* ---------- End .popular ---------- */
+/* ---------- stard .deals-bag ---------- */
+.deals-bag {
+     width: 100%;
+     padding: 0.5em 0;
+     background-color: #D7F5F0;
+}
+
+.best-products {
+     /* display: wrap; */
+     flex-wrap: wrap;
+}
+
+.product-cad {
+     width: 22em;
+     margin-bottom: 3em;
+     background-color: #d9d9d9;
+     border-radius: 0.9em;
+     overflow: hidden;
+     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.product-top {
+     position: relative;
+}
+
+.product-top:hover .prod-mg-hob {
+     opacity: 1;
+}
+
+.prod-mg {
+     width: 22em;
+     height: 15em;
+
+}
+
+.prod-mg img {
+     width: 22em;
+     height: 14em;
+}
+
+.prod-mg-hob {
+     position: absolute;
+     top: 0;
+     opacity: 0;
+     transition: 0.9s ease-in-out;
+}
+
+.prod-mg-hob img {
+     width: 22em;
+     height: 15em;
+}
+
+.product-buttom {
+     width: 18.5em;
+     margin: 0.5em;
+     padding: 0.5em;
+}
+
+.name-product {
+     margin-bottom: 0.5em;
+     color: #050a30;
+}
+
+.ct-n {
+     margin-bottom: 0.5em;
+     font-weight: 550;
+     color: #777;
+}
+
+.tk {
+     margin-bottom: 0.5em;
+     font-size: 1.2em;
+     font-weight: 600;
+     color: #050a30;
+}
+
+.reng {
+     margin-bottom: 1em;
+}
+/* .pro-bb{
+     width: 100%;
+} */
+
+.pro-bb a {
+     text-decoration: none;
+}
+
+.a-t-card {
+     width: 8.9em;
+     height: 2.5em;
+     margin-right: 2em;
+     padding: 0 0.8em;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-color: #050a30;
+     border-radius: 1em;
+}
+
+.a-t-card:hover .fa-cart-shopping {
+     color: #FFff00;
+}
+
+.a-t-card:hover p{
+     color: #FFff00;
+     
+}
+.fa-cart-shopping {
+     font-size: 1em;
+
+}
+
+.tocard {
+     font-size: 0.8em;
+     color: #fff;
+}
+
+.q-v-card {
+     width: 8.5em;
+     height: 2.5em;
+     padding: 0 0.8em;
+     border: 1px solid #050a30;
+     border-radius: 1em;
+}
+
+.q-v-card:hover {
+     background-color: #050a30;
+}
+
+.q-v-card:hover .fa-eye {
+     color: #fff;
+}
+
+.q-v-card:hover .qb {
+     color: #fff;
+}
+
+.fa-eye {
+     color: #000;
+
+}
+
+.qb {
+     color: #000;
+}
+
+/* ---------- End .deals-bag ---------- */
+/* ---------- stard .review ---------- */
+.review {
+     background-color: #d9d9d9;
+     height: 40em;
+     padding: 0.5em;
+}
+
+.customer-testimonial {
+     /* display: wrap; */
+     flex-wrap: wrap;
+}
+
+.costomar-hed {
+     margin: 3em 0 2em;
+     color: #050a30;
+     font-size: 1.5em;
+     font-weight: 600;
+}
+
+.comment {
+     width: 24em;
+     height: 13em;
+     margin-bottom: 2em;
+     padding: 1em;
+     border-radius: 1em;
+     background-color: #fff;
+
+}
+
+.read-comment {
+     margin-bottom: 1.5em;
+     text-align: justify;
+     font-size: 0.9em;
+     color: #555;
+}
+
+.profile {
+     width: 15em;
+
+
+}
+
+.costomar-profile {
+     width: 3em;
+     height: 3em;
+     border-radius: 50%;
+}
+
+.costomar-profile img {
+     width: 3em;
+     height: 3em;
+     border-radius: 50%;
+}
+
+/* ---------- End .review ---------- */
+/* ---------- stard .foot ---------- */
+.foot {
+     width: 100%;
+     height: 50em;
+     padding: 0.5em 0;
+     background-color: #555;
+}
+
+.about {
+     margin: 5em 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: start;
+}
+
+.com-logo {
+     width: 35em;
+     height: 25.5em;
+     margin-right: 1.9em;
+     padding: 1em;
+     text-align: center;
+}
+
+.com-logo img {
+     width: 10em;
+     height: 9em;
+     margin-bottom: 1em;
+}
+
+.log-detalis {
+     text-align: justify;
+     color: #FFF;
+     line-height: 1.5em;
+}
+
+.com-info {
+     width: 15em;
+     height: 9.5em;
+     margin-right: 2em;
+     text-align: center;
+}
+
+.info-h {
+     margin-bottom: 0.5em;
+     color: #FFF;
+     font-family: Inter;
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+}
+
+.co-about {
+     margin-bottom: 0.5em;
+     display: block;
+     color: #FFF;
+     text-decoration: none;
+}
+
+.co-about:hover {
+     color: #d2d4d4;
+     text-decoration: underline;
+}
+
+.online-payment {
+     width: 16em;
+     height: 6em;
+     margin-bottom: 3em;
+     padding: 0.5em 0;
+
+}
+
+.omline {
+     color: #fff;
+     text-align: center;
+     margin-bottom: 0.5em;
+}
+
+.bank-icon img {
+     width: 4em;
+     height: 2em;
+     margin-left: 1em;
+}
+
+.follow-icon a {
+     margin-left: 1em;
+     text-decoration: none;
+     color: #FFF;
+     font-size: 2em;
+
+}
+
+.follow-icon a:hover {
+     /* transform: scaleY(1.5); */
+     /* transform: scaleZ(15); */
+     transform: scale(1.02);
+}
+
+.dami-foot {
+     height: 0.2em;
+     margin-bottom: 2em;
+     background-color: #FFF;
+}
+
+.copy {
+     text-align: center;
+     color: #FFF;
+     font-size: 1.5em;
+
+     font-weight: 400;
+}
+
+/* ---------- End .foot ---------- */
+
+
+
+
+
+/* ---------- Stard productpage nesafe(100gm) ---------- */
+
+
+/* ---------- Stard .pro-ph ---------- */
+.pro-ph {
+     width: 35em;
+     height: 25em;
+     padding: 1em 2.5em;
+     background-color: #EFF1F6;
+     cursor: zoom-in;
+}
+
+.ph-1 img {
+     width: 13em;
+     height: 22em;
+}
+
+/* ---------- End .pro-ph ---------- */
+
+/* ---------- Stard .pro-deteails-right---------- */
+
+.pro-deteails-right {
+     width: 35em;
+     height: 21 em;
+     margin-right: 1.5em;
+     padding: 1em 2em;
+     border: 1px solid;
+}
+
+.p-n {
+     margin-bottom: 3em;
+}
+
+.pro-deteails-right p {
+     margin-bottom: 1em;
+     color: #999;
+}
+
+.checkat {
+     width: 25em;
+     margin: 1em auto;
+     padding: 0.9em 0;
+     background-color: #D9D9D9;
+}
+
+.checkat h3 {
+     margin: 0 0 0.9em 0.5em;
+     color: #050a30;
+}
+
+.checkat .locetion {
+     width: 20em;
+     height: 2.3em;
+     margin: 0 auto;
+     padding: 0 0.9em;
+     border-radius: 1em;
+     background-color: #fff;
+     position: relative;
+}
+
+.locetion input {
+     width: 14.8em;
+     height: 2em;
+     margin-left: 1.5em;
+     border: none;
+     outline: none;
+     font-size: 1em;
+}
+
+.locetion h2 {
+     padding: 0.2em 0.7em;
+     border-radius: 0 1em 1em 0;
+     color: #feca36;
+     background-color: #050a30;
+     cursor: pointer;
+     transition: 0.3s ease-in-out;
+}
+
+.locetion h2:hover {
+     color: #fff;
+}
+
+.fa-location-dot {
+     font-size: 1.5em;
+     position: absolute;
+     left: 3%;
+}
+
+.quantity {
+     width: 25em;
+     margin: 1em auto;
+     padding: 0.5em 1em;
+}
+
+.quantity input {
+     width: 7em;
+     padding: 0.2em 0.9em;
+     border: 1px solid #999;
+     border-radius: 1em;
+     outline: none;
+}
+
+.cad {
+     width: 10em;
+     height: 1.5em;
+     padding: 0.9em;
+     /* border: 1px solid; */
+     border-radius: 1em;
+     color: #fff;
+     background-color: #050a30;
+}
+
+.caed {
+     text-decoration: none;
+}
+
+.bxs-cart-add {
+     font-size: 1.3em;
+}
+
+.cad:hover {
+     color: #feca36;
+}
+
+.help {
+     width: 5em;
+     height: 1.5em;
+     padding: 0.2em 0.5em;
+     border: 1px solid #999;
+     border-radius: 1em;
+}
+
+.help p {
+     text-align: center;
+}
+
+.help:hover {
+     background-color: #050a30;
+}
+
+.help:hover p {
+     color: #FFD700;
+}
+
+/* ---------- End .pro-deteails---------- */
+
+
+/* ---------- Stard .peyment-sistam---------- */
+
+.peyment-sistam {
+     width: 100%;
+     height: 5em;
+     margin: 5em 0;
+     padding: 1.3em 0;
+     background-color: #050a30;
+}
+
+.cash {
+     width: 13.9em;
+     height: 2.5em;
+     padding: 0 0.9em;
+     background-color: #d9d9d9;
+     border-radius: 1.5em;
+     cursor: pointer;
+}
+
+.cash img {
+     width: 2.5em;
+     height: 1.9em;
+     margin-right: 0.5em;
+}
+
+.cash p {
+     font-size: 1em;
+     font-weight: 550;
+     margin-right: 0.5em;
+}
+
+.pay {
+     width: 15em;
+     height: 2.5em;
+     margin-right: 1em;
+
+}
+
+.pay p {
+     color: #fff;
+}
+
+.pay img {
+     width: 3em;
+     cursor: pointer;
+}
+
+/*---------- End .peyment-sistam---------- */
+
+/*---------- Stard .products-detils---------- */
+.lorem {
+     width: 40em;
+     margin: 0 auto 3em;
+     padding: 1.5em;
+     border: 1px solid #999;
+     border-radius: 1.5em;
+}
+
+.lorem p {
+     text-align: justify;
+     line-height: 1.5em;
+     word-spacing: 0.2em;
+     color: #555;
+}
+
+/*---------- Stard .products-detils---------- */
+
+/*---------- Stard .shot-dis---------- */
+.shot-dis h3 {
+     margin: 1em 0;
+     color: #000;
+}
+
+.shot-dis p {
+     margin: 0.5em 0 1em;
+     font-size: 1em;
+     color: #222;
+     font-size: 1em;
+     word-spacing: 0.2em;
+}
+
+/*---------- End .shot-dis---------- */
+
+
+/*---------- Stard .renk---------- */
+.all-star {
+     width: 100%;
+     margin: 1em 0 2em;
+}
+
+.star {
+     width: 35em;
+     margin: 0.5em 0 1em;
+     position: relative;
+}
+
+.bxs-star {
+     color: #FFD700;
+     font-size: 1.5em;
+}
+
+.bx-star {
+     color: #FFD700;
+     font-size: 1.5em;
+}
+
+.metat-1 {
+     width: 23.5em;
+     height: 1.5em;
+     background-color: #d9d9d9;
+}
+
+.metat-5 {
+     width: 20em;
+     height: 1.5em;
+     background-color: #050a30;
+     position: absolute;
+     left: 153px;
+     top: 3%;
+     transform: translateY(0%);
+}
+
+.metat-4 {
+     width: 10em;
+     height: 1.5em;
+     background-color: #050a30;
+     position: absolute;
+     left: 153px;
+     top: 3%;
+     transform: translateY(0%);
+}
+
+.metat-3 {
+     width: 5em;
+     height: 1.5em;
+     background-color: #050a30;
+     position: absolute;
+     left: 153px;
+     top: 3%;
+     transform: translateY(0%);
+}
+
+.metat-2 {
+     width: 2em;
+     height: 1.5em;
+     background-color: #050a30;
+     position: absolute;
+     left: 153px;
+     top: 3%;
+     transform: translateY(0%);
+}
+
+.metat-s1 {
+     width: 0.1em;
+     height: 1.5em;
+     background-color: #050a30;
+     position: absolute;
+     left: 153px;
+     top: 3%;
+     transform: translateY(0%);
+}
+.star p{
+     width: 1em;
+}
+
+
+
+/*---------- End .renk---------- */
+
+.dami-line{
+     width: 100%;
+     height: 0.2em;
+     background-color: #999;
+     margin: 3em 0 4em;
+}
+
+/*---------- Stard .verified---------- */
+
+.customar{
+     margin-bottom: 1em;
+
+}
+
+.customar-name h3{
+     color: #999;
+}
+.customar-name span{
+     color: #222;
+     font-size: 1em;
+
+}
+
+.verified h2{
+     margin-bottom: 0.5em;
+}
+.verified p{
+     margin-bottom: 0.5em;
+     color: #555;
+     font-size: 1em;
+     line-height: 1.5em;
+}
+
+.like{
+     margin-bottom: 1em;
+     text-align: end;
+     text-decoration: none;
+     font-weight: bold;
+     font-family: 'Roboto', sans-serif;
+}
+.like a{
+     color: #000;
+}
